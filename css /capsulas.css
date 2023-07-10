@@ -1,10 +1,22 @@
 /* Global styles */
 body {
+  width: 100%;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+h2, h3, h4, h5, h6, p {
+  font-family: 'Antonio', sans-serif;
+}
+.subtitulo {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  justify-content: center;
+  font-family: 'Antonio', sans-serif;
+}
 /* Header styles */
 .encabezado {
   display: flex;
@@ -44,33 +56,43 @@ nav a {
 
 }
 .fondo-principal {
-  background-image: url(../Imagenes/capsulas-cafe-css2.jpeg);
-  background-size: cover;
-  height: 70vh;
-  background-position: bottom;
+  height: 600px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+.fondo-principal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .Combos-Especiales-Imgs {
   display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-  width: 50px;
-  height: 50px;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 400px;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
-  font-family: 'Antonio', sans-serif
-  
+  font-family: 'Antonio', sans-serif;
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+.Combos-Especiales-Imgs div {
+  height: 100%;
+}
+
+.Combos-Especiales-Imgs div img {
+  height: 70%;
 }
 
 .Combos-Especiales {
   display: flex;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   justify-content: center;
   font-family: 'Antonio', sans-serif;
 }
@@ -79,18 +101,108 @@ nav a {
   display: flex;
   font-size: 35px;
   font-weight: bold;
-  margin-top: 20px;
   justify-content: center;
   font-family: 'Antonio', sans-serif;
   background-color: #c79457da;
-  
 }
 
-.Capsulas-1 {
+.Contenedor-Capsulas {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-bottom: auto;
- 
+  margin-bottom: 20px;
+}
+
+.Contenedor-Capsulas div {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.borde-abajo {
+  border-bottom: 2px solid black;
+}
+
+.borde-arriba {
+  border-top: 2px solid black;
+}
+/* Footer styles */
+footer {
+  background-color: #c79457da;;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  color: #555;
+}
+
+footer input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+}
+
+footer button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+@media (max-width: 480px) {
+  .encabezado {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .encabezado h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .titulo {
+    justify-content: flex-start;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .datos-personales button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .fondo-principal {
+    height: 50vh;
+  }
+
+  .Combos-Especiales-Imgs {
+    height: 300px;
+    font-size: 18px;
+  }
+
+  .Combos-Especiales-Imgs div img {
+    height: 60%;
+  }
+
+  .Combos-Especiales {
+    font-size: 18px;
+  }
+
+  .Titulo-Capsulas {
+    font-size: 30px;
+  }
+
+  .Contenedor-Capsulas div {
+    width: 50%;
+  }
 }

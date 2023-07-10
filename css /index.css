@@ -103,7 +103,6 @@ nav a {
 
 .imagenes-secundarias {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }
@@ -247,6 +246,7 @@ footer button {
   .imagenes-secundarias img {
     max-width: 150px;
     margin: 5px;
+    flex-wrap: wrap;
   }
 
   .redes-ayuda-envios {
