@@ -44,7 +44,7 @@ body {
   
   }
   .fondo-principal-index {
-    background-image: url(../proyecto/Imagenes/coffe\ and\ futbol\ \(1\).png);
+    background-image: url(./Imagenes/coffe\ and\ futbol\ \(1\).png);
     background-size: cover;
     height: 70vh;
     background-position: bottom;
