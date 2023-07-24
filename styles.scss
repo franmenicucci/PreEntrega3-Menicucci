@@ -1,0 +1,423 @@
+$font-family: Arial, sans-serif;
+$primary-color: #c79457da;
+$secondary-color: #333;
+$background-color: rgba(0, 0, 0, 0.51);
+$green-color: green;
+
+// Global styles para Index
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 10px 20px;
+
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+}
+
+.titulo {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Newsreader', serif;
+}
+
+nav a {
+  margin-right: 20px;
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+.datos-personales button {
+  padding: 15px 15px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 100%;
+}
+
+.fondo-principal-index {
+  background-image: url(./Imagenes/coffe\ and\ futbol\ \(1\).png);
+  background-size: cover;
+  height: 70vh;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.contenido {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 50px;
+  background-color: $background-color;
+
+  h2 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ccc;
+    font-family: 'Antonio', sans-serif;
+  }
+
+  p {
+    color: #a1a1a1;
+    line-height: 1.5;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: $green-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 1;
+  }
+}
+
+.fondo-principal {
+  max-width: 200%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nuevos-sabores {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  justify-content: center;
+  font-family: 'Antonio', sans-serif;
+}
+
+.imagenes-secundarias {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  img {
+    max-width: 200px;
+    margin: 10px;
+  }
+}
+
+.redes-ayuda-envios {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.redes-ayuda-envios div {
+  text-align: center;
+}
+
+.redes-ayuda-envios h5 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Antonio', sans-serif;
+}
+
+.redes-ayuda-envios img {
+  max-width: 80px;
+  margin-bottom: 10px;
+}
+
+.redes-ayuda-envios p {
+  color: #555;
+  margin: 0;
+}
+
+.cuerpo-medio, .sale {
+  display: flex;
+  width: fit-content;
+  margin-right: 70px;
+}
+
+.texto-giftcards, .texto-promociones {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+}
+
+.orden, .orden2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 80px;
+  font-family: 'Antonio', sans-serif;
+}
+
+// Footer styles para todas las paginas
+footer {
+  background-color: $primary-color;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: #555;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+   }
+
+  
+
+  /* Global styles Capsulas */
+  h2, h3, h4, h5, h6, p {
+    font-family: 'Antonio', sans-serif;
+  }
+
+  .fondo-principal-capsulas {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .Combos-Especiales-Imgs {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Antonio', sans-serif;
+    background-color: gainsboro;
+    padding: 20px;
+
+    div {
+      height: 100%;
+
+      img {
+        height: 70%;
+      }
+    }
+  }
+
+  .Combos-Especiales {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: center;
+    font-family: 'Antonio', sans-serif;
+  }
+
+  .Titulo-Capsulas {
+    display: flex;
+    font-size: 35px;
+    font-weight: bold;
+    justify-content: center;
+    font-family: 'Antonio', sans-serif;
+    background-color: #c79457da;
+  }
+
+  .Contenedor-Capsulas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+
+    div {
+      width: 33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .borde-abajo {
+      border-bottom: 2px solid black;
+    }
+
+    .borde-arriba {
+      border-top: 2px solid black;
+    }
+  }
+
+
+// Styles para Productos 
+.cafe-1, .maquina-2, .espumador-3 {
+  display: flex;
+  width: fit-content;
+  margin-right: 70px;
+}
+
+.texto-cafe-1, .texto-maquina-2, .texto-espumador-3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+}
+
+.orden-productos, .orden-productos-2, .orden-productos-3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: row;
+  margin-top: 80px;
+  font-family: $font-family;
+}
+
+.Productos-Especiales {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  /* margin-top: 20px; */
+  justify-content: center;
+  font-family: $font-family;
+}
+
+.Titulo-Productos {
+  display: flex;
+  font-size: 35px;
+  font-weight: bold;
+  justify-content: center;
+  font-family: $font-family;
+  background-color: $primary-color;
+}
+
+.fondo-principal-productos {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+// Styles para Cafeteras
+
+.fondo-principal-cafeteras {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.Titulo-Cafeteras {
+  display: flex;
+  font-size: 35px;
+  font-weight: bold;
+  justify-content: center;
+  font-family: $font-family;
+  background-color: $primary-color;
+}
+
+.Remasterizado {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: center;
+  font-family: $font-family;
+}
+
+.cafeteras {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  width: 100%;
+  padding: 50px 0px;
+
+  div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    align-items: center;
+  }
+
+  h5 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $font-family;
+  }
+
+  div img {
+    height: 100px;
+    margin-bottom: 10px;
+  }
+}
+
+.contenido-cafeteras {
+  color: #555;
+  margin: 0;
+  padding: 10px 100px;
+}
+
+.cuadro-texto-1 {
+  height: 250px;
+  width: 250px;
+  background-color: $primary-color; 
+  border: 2px solid black;
+}
+
+
+// Styles para Sobre Nosotros
+
+.imagen-cafe-sobre {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mision-vision {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
