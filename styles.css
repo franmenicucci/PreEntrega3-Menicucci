@@ -373,12 +373,20 @@ body {
     
   /* Global styles Productos */
 
-  .cafe-1, .maquina-2, .espumador-3 {
+  .contenedor-imagen {
     display: flex;
-    width: fit-content;
+    width: 25%;
+    height: 200px;
     margin-right: 70px;
+    border: 5px solid black;
+  }
   
-  } 
+  .contenedor-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
   .texto-cafe-1, .texto-maquina-2, .texto-espumador-3 {
     display: flex;
     flex-direction: column;
@@ -386,13 +394,17 @@ body {
     width: fit-content;
   }
   
-  .orden-productos, .orden-productos-2, .orden-productos-3 {
+  .orden-productos {
     display: flex;
     justify-content: center;
     width: 100%;
     flex-direction: row;
     margin-top: 80px;
     font-family: 'Antonio', sans-serif;
+  }
+
+  .last-producto {
+    margin-bottom: 80px;
   }
 
   .Productos-Especiales {
@@ -422,12 +434,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-  .cafe-1, .maquina-2, .espumador-3 {
-    display: flex;
-    width: fit-content;
-    margin-right: 70px;
-  
   }
 
   
@@ -507,17 +513,28 @@ body {
 
   /* Global Styles Sobre Nosotros */
 
-  .imagen-cafe-sobre {
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    object-fit: cover;
-  }
-  
   .mision-vision {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    background-color: #c79457da;
+    border: solid black 3px
+  }
+
+  .texto-mision-vision {
+    margin-bottom: 100px;
+   
+  }
+
+  .imagen-cafe-sobre {
+    background-image: url(./Imagenes/about-us-foto.jpeg);
+    background-size: cover;
+    height: 70vh;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
